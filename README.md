@@ -1,7 +1,7 @@
 # Calculator
 
 
-> 
+> A calculator built in React with a simple design.
 
 
 ![screenshot]()
@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo]()
+[Live Demo](https://radiant-headland-80560.herokuapp.com/)
 
 
 ## Getting Started

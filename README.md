@@ -42,8 +42,8 @@ OR
 **STEP 2**
 
 - In the Terminal enter `cd calculator`
-- run `npm install`
-- Open index.html located in public folder
+- Run `npm install`
+- Run `npm start`
 
 ## Author
 

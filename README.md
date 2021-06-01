@@ -4,9 +4,6 @@
 > A calculator built in React with a simple design.
 
 
-![screenshot]()
-
-
 ## Built
 
 - Javascript

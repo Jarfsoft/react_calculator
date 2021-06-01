@@ -2,16 +2,16 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 function Button(props) {
-  const { value, key } = props;
+  const { name, key } = props;
   return (
     <button type="button" key={key}>
-      {value}
+      {name}
     </button>
   );
 }
 
 Button.propTypes = {
-  value: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   key: PropTypes.string.isRequired,
 };
 

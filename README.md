@@ -1,7 +1,8 @@
 # Calculator
 
-
 > A calculator built in React with a simple design.
+
+![screenshot](./screenshot.png)
 
 
 ## Built

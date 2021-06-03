@@ -2,6 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Display.css';
 
 function Display(props) {
   const { result } = props;
@@ -17,7 +18,7 @@ function Display(props) {
   };
 
   return (
-    <div>
+    <div className="display">
       {validateResult()}
     </div>
   );

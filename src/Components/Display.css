@@ -1,0 +1,12 @@
+* {
+  width: 100%;
+  background-color: yellow;
+}
+
+.display {
+  text-align: right;
+  width: auto;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: white;
+}

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../Logic/calculate';
+import './App.css';
 
 function App() {
   const [data, setData] = useState({

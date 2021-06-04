@@ -1,5 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-
 import React from 'react';
 
 import Display from './Display';
@@ -34,5 +32,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-/* eslint-enable react/destructuring-assignment */

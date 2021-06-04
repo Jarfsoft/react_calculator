@@ -19,15 +19,6 @@ class App extends React.Component {
       display: <Display result={this.state.data} />,
     };
   }
-  // const [data, setData] = useState({
-  //  total: null,
-  //  next: null,
-  //  operation: null,
-  // });
-
-  // const [display, setDisplay] = useState(
-  //  <Display result={data} />,
-  // );
 
   saveInputHandler = (inputData) => {
     const cb = this.state.data;

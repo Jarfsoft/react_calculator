@@ -1,4 +1,5 @@
 /* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/no-unused-state */
 
 import React from 'react';
 
@@ -11,25 +12,21 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: {
-        total: null,
-        next: null,
-        operation: null,
-      },
-      display: <Display result={this.state.data} />,
+      total: null,
+      next: null,
+      operation: null,
     };
   }
 
   saveInputHandler = (inputData) => {
-    const cb = this.state.data;
-    this.setState(calculate(cb, inputData), [React.callback]);
-    this.setState([React.callback], <Display result={this.state.data} />);
+    const cb = this.state;
+    this.setState(calculate(cb, inputData));
   };
 
   render() {
     return (
       <>
-        {this.state.display}
+        <Display result={this.state} />
         <ButtonPanel onSaveInput={this.saveInputHandler} />
       </>
     );
@@ -39,3 +36,4 @@ class App extends React.Component {
 export default App;
 
 /* eslint-enable react/destructuring-assignment */
+/* eslint-enable react/no-unused-state */

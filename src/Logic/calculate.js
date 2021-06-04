@@ -26,8 +26,11 @@ export default function calculate(data, name) {
     }
   } else if (name === '.') {
     if (result.operation === null) {
-      if (!result.total.includes('.')) result.total = result.total == null ? '0.' : `${result.total}.`;
-    } else if (!result.next.includes('.')) result.next = result.next == null ? '0.' : `${result.next}.`;
+      console.log(typeof result.total);
+      if (result.total == null) result.total = '0.';
+      else if (!result.total.includes('.')) result.total = `${result.total}.`;
+    } else if (result.next == null) result.next = '0.';
+    else if (!result.next.includes('.')) result.next = `${result.next}.`;
   } else if (name === '+/-') {
     if (result.total !== null) {
       result.total *= -1;
@@ -38,7 +41,7 @@ export default function calculate(data, name) {
       result.next.toString();
     }
   } else if (result.total !== null && result.next !== null) {
-    result.total = operate(result.total, result.next, result.operation);
+    result.total = String(operate(result.total, result.next, result.operation));
     result.next = null;
     result.operation = null;
   }

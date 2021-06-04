@@ -1,5 +1,4 @@
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/no-unused-state */
 
 import React from 'react';
 
@@ -11,11 +10,12 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
+    const data = {
       total: null,
       next: null,
       operation: null,
     };
+    this.state = data;
   }
 
   saveInputHandler = (inputData) => {
@@ -36,4 +36,3 @@ class App extends React.Component {
 export default App;
 
 /* eslint-enable react/destructuring-assignment */
-/* eslint-enable react/no-unused-state */

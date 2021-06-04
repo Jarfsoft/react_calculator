@@ -26,7 +26,6 @@ export default function calculate(data, name) {
     }
   } else if (name === '.') {
     if (result.operation === null) {
-      console.log(typeof result.total);
       if (result.total == null) result.total = '0.';
       else if (!result.total.includes('.')) result.total = `${result.total}.`;
     } else if (result.next == null) result.next = '0.';

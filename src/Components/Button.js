@@ -12,12 +12,11 @@ function Button(props) {
   const {
     name,
     press,
-    key,
     fr,
   } = props;
-  const num = fr ? ' btn3' : '';
+  const num = fr === '1' ? ' btn3' : '';
   return (
-    <button className={`btn${num}`} style={name !== '0' ? divStyle1 : divStyle2} type="button" key={key} onClick={() => press(name)}>
+    <button className={`btn${num}`} style={name !== '0' ? divStyle1 : divStyle2} type="button" onClick={() => press(name)}>
       {name}
     </button>
   );
@@ -26,7 +25,6 @@ function Button(props) {
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   press: PropTypes.func.isRequired,
-  key: PropTypes.string.isRequired,
   fr: PropTypes.string.isRequired,
 };
 

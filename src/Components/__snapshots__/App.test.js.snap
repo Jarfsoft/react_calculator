@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator snapshot Calculator section is rendered 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="display"
+  >
+    0
+  </div>
+  <div
+    className="buttonPanel"
+  >
+    <div>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="btn btn3"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="btn btn3"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        X
+      </button>
+    </div>
+    <div>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="btn btn3"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="btn btn3"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;

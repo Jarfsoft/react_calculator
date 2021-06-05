@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -11,7 +13,7 @@ export default class ButtonPanel extends Component {
 
   callButton(x, y, sIH) {
     return this.btns.slice(x, y).map(
-      (btn, i) => <Button fr={this.iExceptions.includes(i)} key={btn} press={sIH} name={btn} />,
+      (btn, i) => <Button fr={this.iExceptions.includes(i) ? '1' : '0'} press={sIH} name={btn} />,
     );
   }
 
@@ -19,19 +21,19 @@ export default class ButtonPanel extends Component {
     const { onSaveInput } = this.props;
     return (
       <div className="buttonPanel">
-        <div>
+        <div key={1}>
           {this.callButton(0, 4, onSaveInput)}
         </div>
-        <div>
+        <div key={2}>
           {this.callButton(4, 8, onSaveInput)}
         </div>
-        <div>
+        <div  key={3}>
           {this.callButton(8, 12, onSaveInput)}
         </div>
-        <div>
+        <div key={4}>
           {this.callButton(12, 16, onSaveInput)}
         </div>
-        <div>
+        <div key={5}>
           {this.callButton(16, 19, onSaveInput)}
         </div>
       </div>
@@ -41,3 +43,5 @@ export default class ButtonPanel extends Component {
 ButtonPanel.propTypes = {
   onSaveInput: PropTypes.func.isRequired,
 };
+
+/* eslint-enable react/jsx-key */

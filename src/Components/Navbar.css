@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 5rem;
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.title {
+  margin: 0.25rem 3rem;
+}
+
+.links {
+  display: flex;
+  margin: 0.1rem 3rem;
+}
+
+.btn-link {
+  margin: 1rem 1rem;
+  color: lightcoral;
+}

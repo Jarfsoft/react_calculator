@@ -27,7 +27,7 @@ export default class ButtonPanel extends Component {
         <div key={2}>
           {this.callButton(4, 8, onSaveInput)}
         </div>
-        <div  key={3}>
+        <div key={3}>
           {this.callButton(8, 12, onSaveInput)}
         </div>
         <div key={4}>

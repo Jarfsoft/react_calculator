@@ -1,13 +1,14 @@
-.button1 {
-  width: 24.45%;
-  height: 6rem;
-  font-size: xx-large;
-  background-color: white;
+.btn {
+  width: 25%;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+  font-family: Roboto, sans-serif;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
 }
 
-.button0 {
-  width: 48.95%;
-  height: 6rem;
-  font-size: xx-large;
-  background-color: white;
+.btn3 {
+  background-color: rgb(247, 186, 118);
 }

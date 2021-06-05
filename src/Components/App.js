@@ -23,10 +23,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="app">
         <Display result={this.state} />
         <ButtonPanel onSaveInput={this.saveInputHandler} />
-      </>
+      </div>
     );
   }
 }

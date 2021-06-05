@@ -7,19 +7,11 @@ import './ButtonPanel.css';
 export default class ButtonPanel extends Component {
   btns = ['AC', '+/-', '%', '÷', '7', '8', '9', 'X', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '=']
 
-  callButton(x, y, sIH, fraction) {
-    if (fraction === '1') {
-      return this.btns.slice(x, y).map(
-        (btn) => <Button fr={fraction} key={btn} press={sIH} name={btn} />,
-      );
-    }
+  iExceptions = [3, 7, 11, 15];
 
-    return (
-      <>
-        <Button fr="1" key="0" press={sIH} name="0" />
-        <Button fr="1" key="." press={sIH} name="." />
-        <Button fr="0" key="=" press={sIH} name="=" />
-      </>
+  callButton(x, y, sIH) {
+    return this.btns.slice(x, y).map(
+      (btn, i) => <Button fr={this.iExceptions.includes(i)} key={btn} press={sIH} name={btn} />,
     );
   }
 
@@ -28,19 +20,19 @@ export default class ButtonPanel extends Component {
     return (
       <div className="buttonPanel">
         <div>
-          {this.callButton(0, 4, onSaveInput, '1')}
+          {this.callButton(0, 4, onSaveInput)}
         </div>
         <div>
-          {this.callButton(4, 8, onSaveInput, '1')}
+          {this.callButton(4, 8, onSaveInput)}
         </div>
         <div>
-          {this.callButton(8, 12, onSaveInput, '1')}
+          {this.callButton(8, 12, onSaveInput)}
         </div>
         <div>
-          {this.callButton(12, 16, onSaveInput, '1')}
+          {this.callButton(12, 16, onSaveInput)}
         </div>
         <div>
-          {this.callButton(16, 19, onSaveInput, '0')}
+          {this.callButton(16, 19, onSaveInput)}
         </div>
       </div>
     );

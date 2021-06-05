@@ -1,4 +1,7 @@
-* {
-  width: 100%;
-  background-color: yellow;
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
